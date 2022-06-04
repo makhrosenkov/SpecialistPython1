@@ -3,3 +3,11 @@
 # Формат выходных данных: Выведите «YES», если треугольник равнобедренный, и «NO» в противном случае.
 
 # TODO: your code here
+
+
+print ('Введите значения длины сторон треугольника')
+side1 = int(input('Сторона а: '))
+side2 = int(input('Сторона b: '))
+side3 = int(input('Сторона с: '))
+
+print ('равнобедренный') if side1 == side2 or side1 == side3 or side2 == side3  else print('неравнобедренный')
