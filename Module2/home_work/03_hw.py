@@ -31,3 +31,11 @@
 # 20 199.8 Rub.
 
 # TODO: your code here
+
+
+print("Введите стоимость единицы товара: ")
+cost = float(input())
+i = 1
+while i < 21:
+    print(i," ", cost*i, ' rub')
+    i += 1
