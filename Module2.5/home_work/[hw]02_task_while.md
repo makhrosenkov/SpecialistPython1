@@ -22,4 +22,33 @@ a = int(input("a: "))
 b = int(input("b: "))
 
 # TODO: you code here...
-```
+
+
+print ('Введите двыа целых числа')
+a = int(input("a: "))
+b = int(input("b: "))
+if a==0:
+    print ("введите а отличное от нуля")
+    a = int(input("a: "))
+if b == 0:
+    print("введите b отличное от нуля")
+    b = int(input("b: "))
+
+divider = 5
+count = 0
+multiple_of_five = 0
+print ('Вы ввели а = ', a, 'и b = ', b)
+if a<b:
+    print ("A > B, список чисел кратных пяти в диапазоне [a, b]: ")
+    while a<b:
+        if a%divider == 0:
+            print (a, end=",")
+            multiple_of_five += 1
+        a += 1
+    print('')
+    print ('Всего чисел кратных пяти: ', multiple_of_five)
+else:
+    print ('Вы ввели B < A, числа в диапазоне [b, a]: ')
+    while b<=a:
+        print (b, end=",")
+        b += 1
