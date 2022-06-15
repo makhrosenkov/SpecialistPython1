@@ -29,30 +29,21 @@ n = 5
 
 ```python
 # TODO: you code here...
-```
 
----
+print("Введите целое число от 1 до 9")
+n = int(input())
+if n < 1 or n > 9:
+    print('ведите число больше единицы и меньше девяти!')
+    n = int(input())
+line = 1
+column = 1
+product_operation = 1
 
-<details>
-<summary>Подсказка-1</summary>
-Для решения задачи вам понадобятся вложенные циклы.
-
-```python
-while ...:  # внешний цикл
-    while ...:  # внутренний цикл
-        ...
-```
-Внешний цикл будет перебирать числа из диапазона [1, n], а внутренний выводить строку для каждого числа диапазона.
-</details>
-
-<details>
-<summary>Подсказка-2</summary>
-Чтобы выводить значение print'ами на одной строке, используйте:
-
-```python
-print(1, end=" ")
-print(2, end=" ")
-print(3, end=" ")
-...
-```
-</details>
+while line <= n:
+    while column <= n:
+        product_operation = column * line
+        print(product_operation, end="   ")
+        column += 1
+    print()
+    column = 1
+    line += 1
