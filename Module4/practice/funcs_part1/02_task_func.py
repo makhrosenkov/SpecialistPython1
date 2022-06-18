@@ -13,3 +13,16 @@ print(palindrome(3443))
 print(palindrome(1234541))
 print(palindrome(1234321))
 print(palindrome(77777))
+
+def palindrome(number):
+    number=str(number)
+    if number [::-1] == number:
+        return True
+    return False
+
+# Тестируем функцию
+print(palindrome(3454))
+print(palindrome(3443))
+print(palindrome(1234541))
+print(palindrome(1234321))
+print(palindrome(77777))
