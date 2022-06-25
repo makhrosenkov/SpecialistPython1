@@ -8,3 +8,9 @@
 def pagination(num_items, items_on_page):
     pass
 
+def pagination(num_items, items_on_page):
+    return num_items/items_on_page
+
+
+
+print(pagination(101,12))
