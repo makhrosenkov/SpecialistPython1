@@ -17,3 +17,17 @@ for line in f:
 
 # Подсказка: пустые строки выглядят так "\n". Помните? Строка считывается вместе с символом переноса!
 # Применение метода "\n".rstrip() --> "" вернет вам пустую строку, строку из НУЛЯ символов.
+
+
+line = ''
+non_whitespace=0
+verse=0
+for line in f:
+    print(line)
+    for n in line:
+        if n != '\n' and n != ' ' and n != '\t':
+            non_whitespace += 1
+    if line == '\n':
+        verse = verse +1
+print('количество непробельных символов: ', non_whitespace)
+print('количество стихотворений: ', verse+1)
