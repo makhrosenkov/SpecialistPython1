@@ -33,3 +33,14 @@ log("message", "log01.txt")  # дописывает "message" в конец фа
 
 Предварительно изучите, как работает программа, пытаясь дописать информацию в файл, которого нет.
 </details>
+
+
+
+
+
+def log(text, file="log.txt"):
+    with open(file, 'a', encoding="utf-8") as f:
+        f.write(text + '\n')
+
+log('hello world')
+log("message", 'log01.txt')
