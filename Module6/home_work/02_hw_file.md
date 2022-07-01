@@ -26,3 +26,19 @@ print(f"Сумма чисел = {summa}")
 ```
 
 ---
+summa = 0
+
+with open("info.txt", "r") as f:
+    for numbers in f:
+        numbers = numbers[:-1]
+        #        numbers1 = numbers
+
+        if numbers.isdigit():
+            summa = summa + int(numbers)
+        if numbers[0] == '-':
+            if numbers[1:].isdigit():
+                summa = summa + int(numbers)
+
+print(f"Сумма чисел = {summa}")
+
+# -26? не пренобразуется к инту...
