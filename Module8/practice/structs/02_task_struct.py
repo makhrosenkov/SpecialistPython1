@@ -5,3 +5,12 @@
 #   например, lst = [1, 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 2, 4, 5, 6]
 #   2. элементы исходного списка, которые не имеют повторений(встречаются только один раз):
 #   например, lst = [1 , 2, 4, 5, 6, 2, 5, 2], нужно получить lst2 = [1, 4, 6]
+
+
+numbers = gen_list(10, 1, 10)
+print(numbers)
+newnumbers = []
+for number in numbers:
+    if numbers.count(number) == 1:
+        newnumbers.append(number)
+print(newnumbers)
